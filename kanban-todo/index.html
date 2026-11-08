@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanban To-Do</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Kanban To-Do</h1>
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Search tasks…" aria-label="Search tasks">
+      <select id="priority-filter" aria-label="Filter by priority">
+        <option value="all">All priorities</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <button type="button" id="add-task" class="btn primary">+ New task</button>
+    </div>
+  </header>
+  <div id="active-tag" class="active-tag" hidden></div>
+
+  <main id="board" class="board"></main>
+
+  <dialog id="task-dialog" aria-labelledby="dialog-title">
+    <form id="task-form">
+      <h2 id="dialog-title">New task</h2>
+      <label>Title
+        <input name="title" required maxlength="120" autocomplete="off">
+      </label>
+      <label>Description
+        <textarea name="description" rows="4"></textarea>
+      </label>
+      <div class="row">
+        <label>Priority
+          <select name="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </label>
+        <label>Status
+          <select name="status"></select>
+        </label>
+      </div>
+      <label>Tags
+        <input name="tags" placeholder="e.g. frontend, bug, urgent" autocomplete="off">
+        <small>Separate tags with commas</small>
+      </label>
+      <div class="dialog-actions">
+        <button type="button" id="delete-task" class="btn danger">Delete</button>
+        <span class="spacer"></span>
+        <button type="button" id="cancel-task" class="btn">Cancel</button>
+        <button type="submit" class="btn primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

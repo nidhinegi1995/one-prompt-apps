@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One-Prompt Apps</title>
+  <style>
+    :root { --bg:#fafafa; --fg:#18181b; --muted:#52525b; --card:#fff; --line:#e4e4e7; --accent:#6d28d9; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#09090b; --fg:#fafafa; --muted:#a1a1aa; --card:#18181b; --line:#27272a; --accent:#a78bfa; } }
+    body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, sans-serif; }
+    main { max-width:760px; margin:0 auto; padding:48px 16px; }
+    h1 { margin:0 0 8px; font-size:28px; }
+    p { color:var(--muted); margin:0 0 32px; }
+    a.card { display:block; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; margin-bottom:16px; color:inherit; text-decoration:none; }
+    a.card:hover { border-color:var(--accent); }
+    a.card strong { color:var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>One-Prompt Apps</h1>
+    <p>Apps built with Claude Code from a single prompt, then improved through a few follow-ups.</p>
+    <a class="card" href="kanban-react/"><strong>Kanban To-Do (React + Vite)</strong><br>Drag-and-drop board with priorities, tags, search, filters and a dark theme.</a>
+    <a class="card" href="kanban-todo/"><strong>Kanban To-Do (plain HTML/CSS/JS)</strong><br>The first version: no build step, just open index.html.</a>
+  </main>
+</body>
+</html>
