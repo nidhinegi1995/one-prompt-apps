@@ -2,7 +2,7 @@
 
 **Apps and content built with Claude Code from a single prompt, then improved through short follow-ups and a multi-agent review.**
 
-**[▶ Live demo](https://YOUR-USERNAME.github.io/one-prompt-apps/)**
+**[▶ Live demo](https://nidhinegi1995.github.io/one-prompt-apps/)**
 
 | React + Vite (dark theme) | Plain HTML/CSS/JS |
 |---|---|
@@ -68,4 +68,4 @@ The same lesson also produced a **reusable brand-voice skill**, [`content-system
 
 ---
 
-Part of my Claude Code learning series: see [agentic-qa-parabank](https://github.com/YOUR-USERNAME/agentic-qa-parabank) and [claude-code-learning-journal](https://github.com/YOUR-USERNAME/claude-code-learning-journal).
+Part of my Claude Code learning series: see [agentic-qa-parabank](https://github.com/nidhinegi1995/agentic-qa-parabank) and [claude-code-learning-journal](https://github.com/nidhinegi1995/claude-code-learning-journal).
